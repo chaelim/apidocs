@@ -1,6 +1,8 @@
 # Create page
 
 Create a new OneNote page in the default section of the default notebook.
+
+The `POST /notes/pages` operation is supported only when creating pages in the current user's default notebook. If you're targeting group notebooks, you can [create pages in a specific section](../api/section_post_pages.md).           
 ### Prerequisites
 One of the following **scopes** is required to execute this API:  
 Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
