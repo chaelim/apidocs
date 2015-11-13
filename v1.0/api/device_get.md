@@ -1,6 +1,6 @@
 # Get device
 
-Retrieve the properties and relationships of device object.
+Get the properties and relationships of a device object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

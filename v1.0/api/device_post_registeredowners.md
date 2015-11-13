@@ -1,6 +1,6 @@
 # Create registeredOwner
 
-Use this API to create a new registeredOwner.
+Add a user as a registered owner of the device.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

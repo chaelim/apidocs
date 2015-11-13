@@ -1,6 +1,6 @@
 # assignedPlan resource type
 
-The **assignedPlans** property of both the [user](user.md) entity and the [tenantDetail](tenantdetail.md) entity is a collection of **assignedPlan**.
+The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.
 
 
 ### JSON representation

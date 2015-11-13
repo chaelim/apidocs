@@ -1,6 +1,6 @@
 # Create device
 
-Use this API to create a new device.
+Create a new device.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

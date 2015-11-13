@@ -1,6 +1,6 @@
 # Create registeredUser
 
-Use this API to create a new registeredUser.
+Add a registered user for the device.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
