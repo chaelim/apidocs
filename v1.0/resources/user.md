@@ -311,19 +311,20 @@ Here is a JSON representation of the resource
 |[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
 |[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
 |[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
-|[List createdObjects](../api/user_list_createdobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a createdObject object collection.|
-|[List directReports](../api/user_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get a directReport object collection.|
+|[List createdObjects](../api/user_list_createdobjects.md) |[DirectoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
+|[List directReports](../api/user_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create Group](../api/user_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the joinedGroups collection.|
 |[Create MailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
-|[List memberOf](../api/user_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
+|[List manager](../api/user_list_manager.md) |[DirectoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
+|[List memberOf](../api/user_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
 |[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
-|[List ownedDevices](../api/user_list_owneddevices.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedDevice object collection.|
-|[List ownedObjects](../api/user_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
-|[List registeredDevices](../api/user_list_registereddevices.md) |[DirectoryObject](directoryobject.md) collection| Get a registeredDevice object collection.|
+|[List ownedDevices](../api/user_list_owneddevices.md) |[DirectoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
+|[List ownedObjects](../api/user_list_ownedobjects.md) |[DirectoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
+|[List registeredDevices](../api/user_list_registereddevices.md) |[DirectoryObject](directoryobject.md) collection| Get the devices that are retistered for the user from the registeredDevices navigation property.|
 |[Update](../api/user_update.md) | [User](user.md)	|Update user object. |
 |[Delete](../api/user_delete.md) | None |Delete user object. |
 |[assignLicense](../api/user_assignlicense.md)|[User](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
