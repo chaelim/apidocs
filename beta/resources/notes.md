@@ -5,14 +5,14 @@ The entry point for OneNote resources.
 All calls to the OneNote service through the Microsoft Graph API use this service root URL:
 
 ```
-https://graph.microsoft.com/<version>/<context>/notes/ 
+https://graph.microsoft.com/<version>/<location>/notes/ 
 ```
 
 OneNote support is in preview, so the version is always `beta`. 
 
-Only user and group contexts are supported. Accessing SharePoint site notebooks is currently not supported. 
+Only accessing user and group notebooks are supported. Accessing SharePoint site notebooks is currently not supported. 
 
-**User notebooks** To access OneNote notebooks that are owned by a user, use one of the following service root URLs:
+**User notebooks** To access personal notebooks on OneDrive or OneDrive for Business, use one of the following service root URLs:
 
 ```
 https://graph.microsoft.com/beta/me/notes/ (current user)
@@ -20,13 +20,13 @@ https://graph.microsoft.com/beta/users/<mail>/notes/
 https://graph.microsoft.com/beta/users/<objectId>/notes/
 ```
 
-**Group notebooks** To access OneNote notebooks that are owned by a group, use the following service root URL:
+**Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
 
 ```
 https://graph.microsoft.com/beta/groups/<objectId>/notes/
 ```
 
-The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the context and your app's functionality. 
+The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the location of the notebooks and your app's functionality. 
 
 |Scope|Permission|Description|
 |:------|:------|:------|
@@ -34,10 +34,10 @@ The following permission scopes provide levels of access to OneNote notebooks. C
 | Notes.ReadWrite.CreatedByApp | Application-only OneNote notebook access | Applies to notebooks owned by the current user. Can view the titles of your notebooks and sections; create new pages; view and modify pages created by the app. Cannot view or modify pages created by other apps or in password protected sections. |  
 | Notes.Read | View OneNote notebooks | Applies to notebooks owned by the current user. Can view the contents of your notebooks and sections. Cannot create new pages; modify existing pages; access password protected sections. |  
 | Notes.ReadWrite | View and modify OneNote notebooks | Applies to notebooks owned by the current user. Can view the titles of your notebooks and sections; view and modify all your pages; create new pages. Cannot access password protected sections. |  
-| Notes.Read.All | View OneNote notebooks in your organization | Applies to group notebooks and other shared OneNote content. Can view the contents of notebooks and sections in all notebooks that the signed-in user has access to. Cannot create new pages; modify existing pages; access password protected sections. |  
-| Notes.ReadWrite.All | View and modify OneNote notebooks in your organization | Applies to group notebooks and other shared OneNote content. Can view the titles of notebooks and sections; view and modify all pages; create new pages in all notebooks that the signed-in user has access to. Cannot access password protected sections. |  
+| Notes.Read.All | View OneNote notebooks in your organization | Applies to all notebooks that the current user has access to. Can view the contents of notebooks and sections in all notebooks that the signed-in user has access to. Cannot create new pages; modify existing pages; access password protected sections. |  
+| Notes.ReadWrite.All | View and modify OneNote notebooks in your organization | Applies to all notebooks that the current user has access to. Can view the titles of notebooks and sections; view and modify all pages; create new pages in all notebooks that the signed-in user has access to. Cannot access password protected sections. |  
 
-The following Group permissions also apply to OneNote operations. So, you don't need to request Notes permissions if you're targeting group notebooks only.
+If you're targeting group notebooks, you'll need to request one of the following Group permissions to get group IDs. These permissions also apply to the OneNote operations related to group notebooks, so you don't need to request Notes permissions if you're only targeting group notebooks and the Group permissions you request provide the read/write access you need.
 
 |Scope|Permission|Description|
 |:------|:------|:------|
@@ -76,7 +76,7 @@ The following Group permissions also apply to OneNote operations. So, you don't 
 |[List notebooks](../api/notes_list_notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
 |[Create page](../api/notes_post_pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
 |[List pages](../api/notes_list_pages.md) |[Page](page.md) collection| Get a collection of pages.|
-|[List sectionGroups](../api/notes_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
+|[List section groups](../api/notes_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
 |[List sections](../api/notes_list_sections.md) |[Section](section.md) collection| Get a collection of sections.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

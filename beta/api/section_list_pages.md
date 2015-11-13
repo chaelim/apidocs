@@ -15,7 +15,7 @@ GET /groups/<objectId>/notes/sections/<id>/pages
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
-|$search|string|The term or phrase to search for in the page title, page body, image alt text, and image OCR text. Search queries return results sorted by relevance.|
+|$search|string|Consumer only. The term or phrase to search for in the page title, page body, image alt text, and image OCR text. Search queries return results sorted by relevance.|
 |$count|none|The count of related entities to return in the result set.|
 |$expand|string|Comma-separated list of relationships to expand and include in the response. The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid values for pages are `parentNotebook` and `parentSection`.|
 |$filter|string|Filter string that lets you filter the response based on a set of criteria.|
