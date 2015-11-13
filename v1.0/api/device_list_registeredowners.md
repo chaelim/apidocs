@@ -1,6 +1,6 @@
 # List registeredOwners
 
-Retrieve a list of directoryobject objects.
+Retrieve a list of users that are registered owners of the device.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
