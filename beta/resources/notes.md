@@ -48,24 +48,12 @@ The following permission scopes provide levels of access to OneNote notebooks. C
 
 **Scopes for groups (Office 365)**
 
-If you're accessing group notebooks, you'll need a Groups permission scope to get the group ID. 
+If you're accessing group notebooks, you'll need a Groups permission scope to get the group ID. Currently, these permissions require administrator rights, but less restrictive access for a narrower scope will be available soon.
 
 | Scope (enterprise) | Permission in Azure portal | Description |  
 |:-------|:------|:------|  
 | Groups.Read.All | Read all groups | Can read all group properties and memberships; read group calendar and conversations on public groups and groups the signed in user is a member of. |  
 | Groups.ReadWrite.All | Read and write all groups | Can create groups on behalf of the signed-in user and read all group properties and memberships; update group properties and memberships for groups the signed-in user owns; read and write group calendar and conversations on public groups and groups the signed-in user is a member of. |  
-
-**Scopes for personal notebooks in OneDrive that are owned by the current user (Consumer)**
-
-| Scope (consumer) | Description |
-|-------|------|
-| office.onenote_create | Can view a list of the user's OneNote notebooks and create new pages, but cannot view or edit existing pages. Can enumerate the user's notebook hierarchy and create pages in any location. |
-| office.onenote_update_by_app | Can create, view, and modify all pages created by the app. |
-| office.onenote_update | Can create, view, and modify any content in the user's OneNote notebooks and pages. |
-| office.onenote  | Can view OneNote notebooks and pages but not modify them. |
-| wl.signin | A [Microsoft account permission scope](https://msdn.microsoft.com/library/hh243646.aspx).<br />Allows your application to take advantage of single sign-on capabilities. |
-| wl.offline_access | A [Microsoft account permission scope](https://msdn.microsoft.com/library/hh243646.aspx).<br />Allows your application to receive a refresh token so it can work offline even when the user isn't active. This scope is not available for the *token* flow. |
- 
 
 <!-- {
   "blockType": "resource",
