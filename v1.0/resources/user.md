@@ -287,10 +287,10 @@ Here is a JSON representation of the resource
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |joinedGroups|[Group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[MailFolder](mailfolder.md) collection| Read-only. Nullable.|
-|manager|[DirectoryObject](directoryobject.md)|The user or contact that is this user’s manager. (HTTP Methods: GET, PUT, DELETE.)|
+|manager|[DirectoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[DirectoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection|The set of applications that are granted consent to impersonate this user. Nullable. (HTTP Methods:  GET, POST, DELETE.)|
+|oauth2PermissionGrants|[OAuth2PermissionGrant](oauth2permissiongrant.md) collection|The set of applications that are granted consent to impersonate this user. Read-only. Nullable. (HTTP Methods:  GET, POST, DELETE.)|
 |ownedDevices|[DirectoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[DirectoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[Photo](photo.md)| Read-only.|
