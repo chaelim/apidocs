@@ -7,10 +7,12 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contacts/<id>
 GET /users/<objectId>/contacts/<id>
+GET /users/<userPrincipalName>/contacts/<id>
+GET /me/contactfolders/<contactFolderId>/contacts/<id>
 GET /users/<objectId>/contactfolders/<contactFolderId>/contacts/<id>
-GET /drive/root/createdByUser/contacts/<id>
-GET /drive/root/lastModifiedByUser/contacts/<id>
+GET /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -20,8 +22,9 @@ GET /drive/root/lastModifiedByUser/contacts/<id>
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer %token%  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -56,7 +59,7 @@ Content-length: 1977
   "changeKey": "EQAAABYAAACd9nJ/tVysQos2hTfspaWRAAADTIa4",
   "categories": [],
   "parentFolderId": "AAMkAGI2AAEOAAA=",
-  "birthday": null,
+  "birthday": "1974-07-22",
   "fileAs": "Fort, Garth",
   "displayName": "Garth Fort",
   "givenName": "Garth",
@@ -92,11 +95,11 @@ Content-length: 1977
   ],
   "homeAddress": {},
   "businessAddress": {
-      "Street": "10 Contoso Way",
-      "City": "Redmond",
-      "State": "WA",
-      "CountryOrRegion": "USA",
-      "PostalCode": "98075"  
+      "street": "10 Contoso Way",
+      "city": "Redmond",
+      "state": "WA",
+      "countryOrRegion": "USA",
+      "postalCode": "98075"  
   },
   "otherAddress": {},
   "spouseName": null,

@@ -1,6 +1,6 @@
 # contact resource type
 
-A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.  A Contact collection returns an array of contacts in the **value** property of the OData response. Use `$count` to get the count of entities in the collection: `.../me/contacts/$count`.
+A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
 
 
 ### JSON representation
