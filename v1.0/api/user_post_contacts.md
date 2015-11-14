@@ -7,8 +7,12 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/contacts
 POST /users/<objectId>/contacts
 POST /users/<userPrincipalName>/contacts
+POST /me/contactFolders/<contactFolderId>/contacts
+POST /users/<objectId>/contactFolders/<contactFolderId>/contacts
+POST /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts
 ```
 ### Request headers
 | Header       | Value |

@@ -3,18 +3,22 @@
 Delete contact.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+*Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/contacts/<id>
 DELETE /users/<objectId>/contacts/<id>
-DELETE /drive/root/createdByUser/contacts/<id>
-DELETE /drive/root/lastModifiedByUser/contacts/<id>
+DELETE /users/<userPrincipalName>/contacts/<id>
+DELETE /me/contactFolders/<contactFolderId>/contacts/<id>
+DELETE /users/<objectId>/contactFolders/<contactFolderId>/contacts/<id>
+DELETE /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| X-Sample-Header  | string  | Sample HTTP header. Update accordingly or remove if not needed|
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer %token%  |
 
 ### Request body
 Do not supply a request body for this method.
