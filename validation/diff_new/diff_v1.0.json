@@ -157,20 +157,18 @@
     "deletedproperties": [
       "creationOptions",
       "isPublic",
-      "lastDirSyncTime",
       "provisioningErrors",
       "emailAddress",
       "isFavorite",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "appRoleAssignments"
     ],
     "renames": {
-      "664": "onPremisesLastSyncDateTime",
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
       "dirSyncEnabled": "onPremisesSyncEnabled",
       "655": "visibility",
-      "717": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
