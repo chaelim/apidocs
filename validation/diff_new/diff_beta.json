@@ -190,11 +190,10 @@
     "isDeleted": false,
     "deletedproperties": [
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "186": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -212,11 +211,10 @@
     "isDeleted": false,
     "deletedproperties": [
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "728": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -245,22 +243,18 @@
   "group": {
     "isDeleted": false,
     "deletedproperties": [
-      "dirSyncEnabled",
       "creationOptions",
-      "isPublic",
-      "lastDirSyncTime",
       "provisioningErrors",
       "emailAddress",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "appRoleAssignments"
     ],
     "renames": {
-      "513": "onPremisesLastSyncDateTime",
-      "47": "onPremisesSyncEnabled",
-      "123": "visibility",
-      "76": "id"
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "isPublic": "visibility",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -348,10 +342,9 @@
   "oauth2permissiongrant": {
     "isDeleted": false,
     "deletedproperties": [
-      "objectId"
     ],
     "renames": {
-      "770": "id"
+      "770": "objectId"
     },
     "deletedmethods": [
 
@@ -364,27 +357,21 @@
   "orgcontact": {
     "isDeleted": false,
     "deletedproperties": [
-      "dirSyncEnabled",
       "facsimileTelephoneNumber",
-      "lastDirSyncTime",
-      "mobile",
-      "physicalDeliveryOfficeName",
       "provisioningErrors",
       "sipProxyAddress",
-      "telephoneNumber",
       "thumbnailPhoto",
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "534": "businessPhones",
+      "telephoneNumber": "businessPhones",
       "335": "companyName",
-      "9": "mobilePhone",
-      "661": "onPremisesSyncEnabled",
-      "514": "onPremisesLastSyncDateTime",
-      "29": "officeLocation",
-      "898": "id"
+      "mobile": "mobilePhone",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "physicalDeliveryOfficeName": "officeLocation",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -414,10 +401,9 @@
   "passwordprofile": {
     "isDeleted": false,
     "deletedproperties": [
-      "forceChangePasswordNextLogin"
     ],
     "renames": {
-      "221": "forceChangePasswordNextSignIn"
+      "forceChangePasswordNextLogin": "forceChangePasswordNextSignIn"
     },
     "deletedmethods": [
 
@@ -527,14 +513,13 @@
     "deletedproperties": [
       "appOwnerTenantId",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "createdOnBehalfOf"
     ],
     "renames": {
       "811": "addIns",
       "587": "appOwnerOrganizationId",
-      "53": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -559,10 +544,9 @@
   "subscribedsku": {
     "isDeleted": false,
     "deletedproperties": [
-      "objectId"
     ],
     "renames": {
-      "403": "id",
+      "objectId": "id",
       "227": "appliesTo"
     },
     "deletedmethods": [
@@ -580,16 +564,10 @@
   "user": {
     "isDeleted": false,
     "deletedproperties": [
-      "dirSyncEnabled",
       "facsimileTelephoneNumber",
-      "immutableId",
-      "lastDirSyncTime",
-      "mobile",
       "otherMails",
-      "physicalDeliveryOfficeName",
       "provisioningErrors",
       "sipProxyAddress",
-      "telephoneNumber",
       "thumbnailPhoto",
       "emailAddress",
       "mailboxGuid",
@@ -597,20 +575,19 @@
       "principalName",
       "tags",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "appRoleAssignments",
       "oauth2PermissionGrants"
     ],
     "renames": {
-      "843": "businessPhones",
+      "telephoneNumber": "businessPhones",
       "8": "companyName",
-      "306": "mobilePhone",
-      "677": "onPremisesImmutableId",
-      "312": "onPremisesLastSyncDateTime",
-      "517": "onPremisesSyncEnabled",
-      "233": "officeLocation",
-      "742": "id"
+      "mobile": "mobilePhone",
+      "immutableId": "onPremisesImmutableId",
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "physicalDeliveryOfficeName": "officeLocation",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -623,13 +600,11 @@
   "verifieddomain": {
     "isDeleted": false,
     "deletedproperties": [
-      "default",
-      "id",
-      "initial"
+      "id"
     ],
     "renames": {
-      "775": "isDefault",
-      "619": "isInitial"
+      "default": "isDefault",
+      "initial": "isInitial"
     },
     "deletedmethods": [
 

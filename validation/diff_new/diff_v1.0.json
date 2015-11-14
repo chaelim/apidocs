@@ -156,7 +156,6 @@
     "isDeleted": false,
     "deletedproperties": [
       "creationOptions",
-      "isPublic",
       "provisioningErrors",
       "emailAddress",
       "isFavorite",
@@ -167,7 +166,7 @@
     "renames": {
       "lastDirSyncTime": "onPremisesLastSyncDateTime",
       "dirSyncEnabled": "onPremisesSyncEnabled",
-      "655": "visibility",
+      "isPublic": "visibility",
       "objectId": "id"
     },
     "deletedmethods": [
@@ -337,7 +336,6 @@
       "otherMails",
       "provisioningErrors",
       "sipProxyAddress",
-      "telephoneNumber",
       "thumbnailPhoto",
       "emailAddress",
       "mailboxGuid",
@@ -351,7 +349,7 @@
       "joinedGroups"
     ],
     "renames": {
-      "360": "businessPhones",
+      "telephoneNumber": "businessPhones",
       "494": "companyName",
       "mobile": "mobilePhone",
       "immutableId": "onPremisesImmutableId",
