@@ -2,16 +2,14 @@
   "application": {
     "isDeleted": false,
     "deletedproperties": [
-      "availableToOtherTenants",
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
       "482": "addIns",
-      "268": "availableToOtherOrganizations",
+      "availableToOtherTenants": "availableToOtherOrganizations",
       "433": "recordConsentConditions",
-      "910": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
       "restore"
@@ -59,10 +57,9 @@
   "assignedplan": {
     "isDeleted": false,
     "deletedproperties": [
-      "assignedTimestamp"
     ],
     "renames": {
-      "247": "assignedDateTime"
+      "assignedTimestamp": "assignedDateTime"
     },
     "deletedmethods": [
 
@@ -118,30 +115,21 @@
   "device": {
     "isDeleted": false,
     "deletedproperties": [
-      "approximateLastLogonTimestamp",
-      "deviceObjectVersion",
-      "deviceOSType",
-      "deviceOSVersion",
-      "devicePhysicalIds",
-      "deviceTrustType",
-      "dirSyncEnabled",
-      "lastDirSyncTime",
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "287": "approximateLastSignInDateTime",
-      "881": "deviceVersion",
+      "approximateLastLogonTimestamp": "approximateLastSignInDateTime",
+      "deviceObjectVersion": "deviceVersion",
       "804": "isCompliant",
       "665": "isManaged",
-      "79": "onPremisesLastSyncDateTime",
-      "684": "onPremisesSyncEnabled",
-      "982": "operatingSystem",
-      "106": "operatingSystemVersion",
-      "809": "physicalIds",
-      "603": "trustType",
-      "523": "id"
+      "lastDirSyncTime": "onPremisesLastSyncDateTime",
+      "dirSyncEnabled": "onPremisesSyncEnabled",
+      "deviceOSType": "operatingSystem",
+      "deviceOSVersion": "operatingSystemVersion",
+      "devicePhysicalIds": "physicalIds",
+      "deviceTrustType": "trustType",
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -163,11 +151,10 @@
     "isDeleted": false,
     "deletedproperties": [
       "objectType",
-      "objectId",
       "deletionTimestamp"
     ],
     "renames": {
-      "784": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 
@@ -183,14 +170,13 @@
       "isSystem",
       "roleDisabled",
       "objectType",
-      "objectId",
       "deletionTimestamp",
       "memberOf",
       "owners",
       "ownedObjects"
     ],
     "renames": {
-      "657": "id"
+      "objectId": "id"
     },
     "deletedmethods": [
 

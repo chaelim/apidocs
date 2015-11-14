@@ -67,23 +67,24 @@ if __name__ == '__main__':
     for dirpath, dirnames, files in os.walk(API_DIR):
         for name in files:
             if name.endswith('.md'):
-                api_file_names[name] = 0
+                api_file_names[name] = [0, None]
 
     for root, dirs, files in os.walk(RESOURCE_DIR):
         for name in files:
             with codecs.open(os.path.join(root, name), 'r', encoding='utf8') as f:
                 lines = f.readlines()
                 for line in lines:
-                    s = re.search('\(\.\.\/api\/([^\)]+)\)', line)
+                    s = re.search('(\[[^\]]+\])\(\.\.\/api\/([^\)]+)\)', line)
                     if s:
-                        if s.group(1) in api_file_names:
-                            api_file_names[s.group(1)] += 1
+                        if s.group(2) in api_file_names:
+                            api_file_names[s.group(2)][0] += 1
+                            api_file_names[s.group(2)][1] = s.group(1)
                         else:
-                            print('ERROR: Broken link in file \"%s\" : %s' % (name, s.group(1)))
+                            print('ERROR: Broken link \"%s\" : %s (%s)' % (name, s.group(1), s.group(2)))
 
     orphaned_file_count = 0
     for k, v in api_file_names.items():
-        if v == 0:
+        if v[0] == 0:
             orphaned_file_count += 1
             print("ERROR: Orphaned file \"%s\"" % k)
 
